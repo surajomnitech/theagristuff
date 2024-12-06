@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,27 +34,33 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden">
+    <div className="relative w-full h-[450px] md:h-[500px]">
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute w-full h-full transition-opacity duration-500 ${
+          className={`absolute inset-0 transition-opacity duration-500 ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
+          style={{ zIndex: index === currentSlide ? 1 : 0 }}
         >
-          <img
-            src={slide.image}
-            alt={slide.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white">
-            <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
-            <p className="text-xl">{slide.description}</p>
+          <div className="relative w-full h-full">
+            <Image
+              src={slide.image}
+              alt={slide.title}
+              fill
+              priority={index === 0}
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{slide.title}</h2>
+              <p className="text-lg md:text-xl text-center max-w-3xl">{slide.description}</p>
+            </div>
           </div>
         </div>
       ))}
       
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
