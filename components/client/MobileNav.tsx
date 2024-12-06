@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { navItems } from '../shared/NavItems';
@@ -9,6 +9,24 @@ export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (isOpen && !target.closest('.mobile-nav-container')) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [isOpen]);
+
+  // Close menu on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   const isActive = (path: string) => {
     if (path === '/') {
       return pathname === path;
@@ -17,11 +35,15 @@ export default function MobileNav() {
   };
 
   return (
-    <>
+    <div className="mobile-nav-container">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsOpen(!isOpen);
+        }}
         className="mobile-menu-button"
         aria-label="Toggle menu"
+        aria-expanded={isOpen}
       >
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           {isOpen ? (
@@ -32,20 +54,18 @@ export default function MobileNav() {
         </svg>
       </button>
 
-      {isOpen && (
-        <div className="mobile-menu">
-          {navItems.map((item) => (
-            <Link
-              key={item.path}
-              href={item.path}
-              className={`nav-item ${isActive(item.path) ? 'active' : ''}`}
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      )}
-    </>
+      <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
+        {navItems.map((item) => (
+          <Link
+            key={item.path}
+            href={item.path}
+            className={`nav-item ${isActive(item.path) ? 'active' : ''}`}
+            onClick={() => setIsOpen(false)}
+          >
+            {item.label}
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }

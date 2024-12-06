@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Slider from '@/app/components/slider';
 
 export default function Home() {

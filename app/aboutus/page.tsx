@@ -51,22 +51,22 @@ export default function AboutUs() {
             </p>
 
             <p className="mb-6">
-              Social responsibility, compliance, and sustainability are central to our organization. We take pride in our effective practices and the dedication of our "unsung heroes"—our network of farmers. Most of our farmers are Fair Trade certified, and our organic products carry EU organic certification.
-            </p>
+                Social responsibility, compliance, and sustainability are central to our organization. We take pride in our effective practices and the dedication of our &ldquo;unsung heroes&rdquo;&mdash;our network of farmers. Most of our farmers are Fair Trade certified, and our organic products carry EU organic certification.
+              </p>
 
-            <div className="organico-section">
-              <div className="organico-content">
-                <Image
-                  src="/organico_logo.jpeg"
-                  alt="Organico Logo"
-                  width={200}
-                  height={100}
-                  priority
-                  className="organico-logo"
-                />
-                <p>
-                  Our brand "Organico" is well-regarded among retailers, distributors, wholesalers, and in the hospitality industry, particularly in the European Union, Middle East, and the Maldives.
-                </p>
+              <div className="organico-section">
+                <div className="organico-content">
+                  <Image
+                    src="/organico_logo.jpeg"
+                    alt="Organico Logo"
+                    width={200}
+                    height={100}
+                    priority
+                    className="organico-logo"
+                  />
+                  <p>
+                    Our brand &ldquo;Organico&rdquo; is well-regarded among retailers, distributors, wholesalers, and in the hospitality industry, particularly in the European Union, Middle East, and the Maldives.
+                  </p>
               </div>
             </div>
 

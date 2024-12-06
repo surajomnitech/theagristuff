@@ -4,6 +4,7 @@
     background: var(--dark-green);
     padding: 0.5rem 0;
     position: relative;
+    z-index: 1000;
 }
 
 .navbar::before {
@@ -32,6 +33,12 @@
     width: 100%;
 }
 
+.mobile-nav-container {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
 .mobile-menu-button {
     position: absolute;
     left: 0;
@@ -42,11 +49,16 @@
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1010;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-menu-button:hover {
     color: var(--lime-green);
+}
+
+.mobile-menu-button:focus {
+    outline: none;
 }
 
 .desktop-menu {
@@ -54,14 +66,22 @@
 }
 
 .mobile-menu {
-    display: none;
-    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     background: var(--dark-green);
-    width: 100%;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .mobile-menu.open {
-    display: block;
+    max-height: 300px;
+    padding: 0.5rem 0;
 }
 
 .nav-item {
@@ -72,6 +92,12 @@
     transition: all 0.3s ease;
     text-align: center;
     position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-item:active {
+    background-color: var(--lime-green);
+    color: var(--primary-black);
 }
 
 .nav-item:hover {
@@ -102,17 +128,13 @@
         display: none;
     }
 
-    .desktop-menu {
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0 2rem;
+    .mobile-menu {
+        display: none;
     }
 
-    .nav-item {
-        border-radius: 4px;
-        white-space: nowrap;
+    .desktop-menu {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
     }
 }

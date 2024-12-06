@@ -31,7 +31,7 @@ const Slider = () => {
     }, 5000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   return (
     <div className="relative w-full h-[450px] md:h-[500px]">
