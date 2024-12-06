@@ -35,8 +35,8 @@ const Navbar = () => {
 
           <div className="desktop-menu">
           <Link href="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>Home</Link>
+          <Link href="/aboutus" className={`nav-item ${isActive('/aboutus') ? 'active' : ''}`}>About us</Link>
             <Link href="/products" className={`nav-item ${isActive('/products') ? 'active' : ''}`}>Products</Link>
-            <Link href="/services" className={`nav-item ${isActive('/services') ? 'active' : ''}`}>Services</Link>
             <Link href="/contact" className={`nav-item ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
           </div>
         </div>
@@ -44,8 +44,8 @@ const Navbar = () => {
         {isOpen && (
           <div className="mobile-menu">
             <Link href="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>Home</Link>
+            <Link href="/aboutus" className={`nav-item ${isActive('/aboutus') ? 'active' : ''}`}>About us</Link>
             <Link href="/products" className={`nav-item ${isActive('/products') ? 'active' : ''}`}>Products</Link>
-            <Link href="/services" className={`nav-item ${isActive('/services') ? 'active' : ''}`}>Services</Link>
             <Link href="/contact" className={`nav-item ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
           </div>
         )}

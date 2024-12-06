@@ -1,0 +1,96 @@
+.about-page {
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+  
+  .about-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .intro-section {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .text-column {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .logo-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .text-content p {
+    text-align: justify;
+  }
+  
+  .organico-section {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .organico-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .organico-logo {
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .intro-section {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .logo-column {
+      order: -1;
+    }
+  
+    .organico-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+    }
+  
+    .about-content {
+      padding: 1.5rem;
+    }
+  
+    .text-content {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    
+    .organico-section {
+      padding: 1.5rem;
+    }
+  }
