@@ -6,19 +6,19 @@ const Slider = () => {
   
   const slides = [
     {
-      image: 'https://via.placeholder.com/1200x400',
-      title: 'Welcome to Our Site',
-      description: 'Discover amazing products and services',
+      image: '/sri lanka cinnamon slide 1.jpg',
+      title: 'Welcome to The Agristuff',
+      description: 'Established in 2001, The Agristuff Pvt Ltd is your go-to source for high-quality agricultural exports.',
     },
     {
-      image: 'https://via.placeholder.com/1200x400',
-      title: 'Special Offers',
-      description: 'Check out our latest deals',
+      image: '/sri lanka farmer slide 2.jpg',
+      title: 'Our Commitment',
+      description: 'We work closely with Fair Trade certified farmers to promote sustainable farming.',
     },
     {
-      image: 'https://via.placeholder.com/1200x400',
-      title: 'Join Our Community',
-      description: 'Be part of something special',
+      image: '/sri lanka farmer slide 3.png',
+      title: 'Discover the Vibrant Flavors of Organico',
+      description: 'Experience Organico, our premium brand, known for its quality across the EU, Middle East, and Maldives.',
     },
   ];
 

@@ -21,11 +21,11 @@ const Header = () => {
         <div className="contact-info">
           <a href="tel:+1234567890" className="contact-item">
             <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-            <span>+1 (234) 567-890</span>
+            <span>+94 755 186 186</span>
           </a>
           <a href="mailto:info@theagristuff.com" className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-            <span>info@theagristuff.com</span>
+            <span>info@theagristuff.lk</span>
           </a>
         </div>
       </div>

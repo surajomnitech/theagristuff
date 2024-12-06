@@ -6,25 +6,24 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">About Us</h3>
               <p className="text-gray-300">
-                Your company description goes here. Add a brief overview of your business and its mission.
+              We specialize in delivering high-quality, organic, and conventional fruits, vegetables, and spices to global markets
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><a href="/" className="text-gray-300 hover:text-white">Home</a></li>
-                <li><a href="/about" className="text-gray-300 hover:text-white">About</a></li>
-                <li><a href="/services" className="text-gray-300 hover:text-white">Services</a></li>
-                <li><a href="/contact" className="text-gray-300 hover:text-white">Contact</a></li>
+              <h3 className="text-xl font-bold mb-4">SRI LANKAN OFFICE (Head Office)</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li>The Agristuff (Pvt)Ltd.</li>
+                <li>No.1080/1N, Dharmasoka Mawatha, Talangama North, Malabe, Sri Lanka.</li>
+                <li>Phone: +94 755 186 186 / +94 702 805 611</li>
+                <li>Email: sales@theagristuff.lk</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Contact Info</h3>
+              <h3 className="text-xl font-bold mb-4">MALDIVES OFFICE</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>123 Street Name</li>
-                <li>City, Country</li>
-                <li>Phone: (123) 456-7890</li>
-                <li>Email: info@example.com</li>
+                <li>Lot No 10203, Hithigas Magu, Goalhi 3 Hulhumale, Maldives.</li>
+                <li>Phone: +96 094 470 29 / +96 074 88 004</li>
+                <li>Email: sales@theagristuff.lk</li>
               </ul>
             </div>
             <div>
@@ -52,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-8 border-t border-gray-700 pt-8 text-center text-gray-300">
-            <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} The Agristuff. All rights reserved.</p>
           </div>
         </div>
       </footer>

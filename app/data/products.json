@@ -1,0 +1,389 @@
+{
+  "spice_garden": {
+    "title": "Spice Garden",
+    "products": [
+      {
+        "id": "sg1",
+        "name": "Ceylon Cinnamon",
+        "image": "/products/spices/Cinnamon.jpg",
+        "description": "Premium Ceylon Cinnamon"
+      },
+      {
+        "id": "sg2",
+        "name": "Black Pepper",
+        "image": "/products/spices/Black Pepper.jpg",
+        "description": "Organic Black Pepper"
+      },
+      {
+        "id": "sg3",
+        "name": "Fresh Green Peper",
+        "image": "/products/spices/Fresh Green Peper.jpg",
+        "description": "Fresh Green Peper"
+      },
+      {
+        "id": "sg4",
+        "name": "Cardamom",
+        "image": "/products/spices/cardamom.jpg",
+        "description": "Cardamom"
+      },
+      {
+        "id": "sg5",
+        "name": "Chilli Flakes",
+        "image": "/products/spices/Chilli Flakes.jpg",
+        "description": "Chilli Flakes"
+      },
+      {
+        "id": "sg6",
+        "name": "Green Chillies",
+        "image": "/products/spices/green_chillie.jpg",
+        "description": "Green Chillies"
+      },
+      {
+        "id": "sg7",
+        "name": "Red Chillies",
+        "image": "/products/spices/Red Chillies.jpg",
+        "description": "Red Chillies"
+      },
+      {
+        "id": "sg8",
+        "name": "Pandan Leaves",
+        "image": "/products/spices/(Pandan Leaves)Rampe.jpg",
+        "description": "Chilli Flakes"
+      },
+      {
+        "id": "sg9",
+        "name": "Curry Leaves",
+        "image": "/products/spices/Curry Leafs.jpg",
+        "description": "Curry Leaves"
+      },
+      {
+        "id": "sg10",
+        "name": "Garlic",
+        "image": "/products/spices/Garlic.jpg",
+        "description": "Garlic"
+      },
+      {
+        "id": "sg11",
+        "name": "Ginger",
+        "image": "/products/spices/Ginger.jpg",
+        "description": "Ginger"
+      },
+      {
+        "id": "sg12",
+        "name": "Lemongrass",
+        "image": "/products/spices/Lemongrass.jpg",
+        "description": "Lemongrass"
+      },
+      {
+        "id": "sg13",
+        "name": "Nai Miris",
+        "image": "/products/spices/Nai Miris.jpg",
+        "description": "Nai Miris"
+      },
+      {
+        "id": "sg14",
+        "name": "Nutmeg",
+        "image": "/products/spices/Nutmeg.jpg",
+        "description": "Nutmeg"
+      }
+    ]
+  },
+  "veg_basket": {
+    "title": "Veg Basket Organic",
+    "products": [
+      {
+        "id": "vb1",
+        "name": "Green Beans",
+        "image": "/products/vegetables/Beans green.jpg",
+        "description": "Green Beans"
+      },
+      {
+        "id": "vb2",
+        "name": "Beetroot",
+        "image": "/products/vegetables/Beetroot.jpg",
+        "description": "Beetroot"
+      },
+      {
+        "id": "vb3",
+        "name": "Bitter Gourd",
+        "image": "/products/vegetables/bitter_gourd.jpg",
+        "description": "Bitter Gourd"
+      },
+      {
+        "id": "vb4",
+        "name": "Breadfruit",
+        "image": "/products/vegetables/Breadfruit.jpg",
+        "description": "Breadfruit"
+      },
+      {
+        "id": "vb5",
+        "name": "Butter Beans",
+        "image": "/products/vegetables/Butter beans.png",
+        "description": "Butter Beans"
+      },
+      {
+        "id": "vb6",
+        "name": "Carrot",
+        "image": "/products/vegetables/Carrot.jpg",
+        "description": "Carrot"
+      },
+      {
+        "id": "vb7",
+        "name": "Coriander",
+        "image": "/products/vegetables/coriander.jpg",
+        "description": "Coriander"
+      },
+      {
+        "id": "vb8",
+        "name": "Cucumber",
+        "image": "/products/vegetables/Cucumber.jpg",
+        "description": "Cucumber"
+      },
+      {
+        "id": "vb9",
+        "name": "Gotukola",
+        "image": "/products/vegetables/Gotukola.jpg",
+        "description": "Gotukola"
+      },
+      {
+        "id": "vb10",
+        "name": "Green Chilli",
+        "image": "/products/vegetables/Green Chilli.jpg",
+        "description": "Green Chilli"
+      },
+      {
+        "id": "vb11",
+        "name": "Kakiri",
+        "image": "/products/vegetables/kakiri-.jpg",
+        "description": "Kakiri"
+      },
+      {
+        "id": "vb12",
+        "name": "Kankun",
+        "image": "/products/vegetables/KANKUN.jpg",
+        "description": "Kankun"
+      },
+      {
+        "id": "vb13",
+        "name": "Lime",
+        "image": "/products/vegetables/Lime.jpg",
+        "description": "Lime"
+      },
+      {
+        "id": "vb14",
+        "name": "Lotus root",
+        "image": "/products/vegetables/lotus_root.jpg",
+        "description": "Lotus root"
+      },
+      {
+        "id": "vb15",
+        "name": "Moringa",
+        "image": "/products/vegetables/Moringa.jpg",
+        "description": "Moringa"
+      },
+      {
+        "id": "vb16",
+        "name": "Mukunuwenna",
+        "image": "/products/vegetables/Mukunuwenna.jpg",
+        "description": "Mukunuwenna"
+      },
+      {
+        "id": "vb17",
+        "name": "Onion",
+        "image": "/products/vegetables/Onions.jpg",
+        "description": "Onion"
+      },
+      {
+        "id": "vb18",
+        "name": "Pumpkin",
+        "image": "/products/vegetables/Pumpkin.jpg",
+        "description": "Pumpkin"
+      },
+      {
+        "id": "vb19",
+        "name": "Scotch Bonnet Pepper",
+        "image": "/products/vegetables/Scotch Bonnet Green.jpg",
+        "description": "Scotch Bonnet Pepper"
+      },
+      {
+        "id": "vb20",
+        "name": "Spring Onion",
+        "image": "/products/vegetables/spring_onion.jpg",
+        "description": "Spring Onion"
+      },
+      {
+        "id": "vb21",
+        "name": "Winged Beans",
+        "image": "/products/vegetables/winged_beans.jpg",
+        "description": "Winged Beans"
+      }
+      
+    ]
+  },
+  "fruit_platter": {
+    "title": "Fruit Platter",
+    "products": [
+      {
+        "id": "fp1",
+        "name": "Ambarella",
+        "image": "/products/fruits/ambarella.png",
+        "description": "Ambarella"
+      },
+      {
+        "id": "fp2",
+        "name": "Bael",
+        "image": "/products/fruits/bael.jpg",
+        "description": "The Miracle Fruit"
+      },
+      {
+        "id": "fp3",
+        "name": "Banana Ambul",
+        "image": "/products/fruits/banana ambul.jpg",
+        "description": "Banana Ambul"
+      },
+      {
+        "id": "fp4",
+        "name": "Banana Red",
+        "image": "/products/fruits/banana red.jpg",
+        "description": "Banana Red"
+      },
+      {
+        "id": "fp5",
+        "name": "Banana",
+        "image": "/products/fruits/Banana.jpg",
+        "description": "Banana"
+      },
+      {
+        "id": "fp6",
+        "name": "Green Coconut",
+        "image": "/products/fruits/green coconut.jpg",
+        "description": "Green Coconut"
+      },
+      {
+        "id": "fp7",
+        "name": "Guava",
+        "image": "/products/fruits/Guava.jpg",
+        "description": "Guava"
+      },
+      {
+        "id": "fp8",
+        "name": "Jackfruit",
+        "image": "/products/fruits/Jackfruit.jpg",
+        "description": "Jackfruit"
+      },
+      {
+        "id": "fp9",
+        "name": "King Coconut",
+        "image": "/products/fruits/King Coconut.jpg",
+        "description": "King Coconut"
+      },
+      {
+        "id": "fp10",
+        "name": "Mango",
+        "image": "/products/fruits/mango.jpg",
+        "description": "Mango"
+      },
+      {
+        "id": "fp11",
+        "name": "Mangusteen",
+        "image": "/products/fruits/Mangusteen.jpg",
+        "description": "Mangusteen"
+      },
+      {
+        "id": "fp12",
+        "name": "Papaya",
+        "image": "/products/fruits/Papaya.jpg",
+        "description": "Papaya"
+      },
+      {
+        "id": "fp13",
+        "name": "Passion Fruit",
+        "image": "/products/fruits/Passion Fruit.jpg",
+        "description": "Passion Fruit"
+      },
+      {
+        "id": "fp14",
+        "name": "Pineapple",
+        "image": "/products/fruits/Pineapple.jpg",
+        "description": "Pineapple"
+      },
+      {
+        "id": "fp15",
+        "name": "Rambutan",
+        "image": "/products/fruits/Rambutan.jpg",
+        "description": "Rambutan"
+      },
+      {
+        "id": "fp16",
+        "name": "Soursop",
+        "image": "/products/fruits/soursop.JPG",
+        "description": "Soursop"
+      },
+      {
+        "id": "fp17",
+        "name": "Tomatoes",
+        "image": "/products/fruits/tomatoes.jpg",
+        "description": "Tomatoes"
+      },
+      {
+        "id": "fp18",
+        "name": "Watermelon",
+        "image": "/products/fruits/Watermelon.jpg",
+        "description": "Watermelon"
+      },
+      {
+        "id": "fp19",
+        "name": "Wood Apple",
+        "image": "/products/fruits/woodapple.jpg",
+        "description": "Wood Apple"
+      }
+    ]
+  },
+  "farm_shop": {
+    "title": "Farm Shop",
+    "products": [
+      {
+        "id": "fs1",
+        "name": "Beef",
+        "image": "/products/farm/beef.jpg",
+        "description": "Beef"
+      },
+      {
+        "id": "fs2",
+        "name": "Chicken",
+        "image": "/products/farm/chicken.webp",
+        "description": "Chicken"
+      },
+      {
+        "id": "fs3",
+        "name": "Skinless Chicken",
+        "image": "/products/farm/skinless_chicken.png",
+        "description": "Skinless Chicken"
+      },
+      {
+        "id": "fs4",
+        "name": "Chicken Parts",
+        "image": "/products/farm/chicken_parts.webp",
+        "description": "Chicken Parts"
+      },
+      {
+        "id": "fs5",
+        "name": "Eggs",
+        "image": "/products/farm/eggs.jpg",
+        "description": "Eggs"
+      },
+      {
+        "id": "fs6",
+        "name": "Dried Fish Chips",
+        "image": "/products/farm/dried_fish_chips.jpg",
+        "description": "Dried Fish Chips"
+      },
+      {
+        "id": "fs7",
+        "name": "Dried Fish",
+        "image": "/products/farm/dry_fish.jpg",
+        "description": "Dried Fish"
+      }
+    ]
+  }
+}

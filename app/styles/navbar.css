@@ -1,30 +1,48 @@
 @import './theme.css';
 
 .navbar {
-    background-color: var(--dark-green);
+    background: var(--dark-green);
     padding: 0.5rem 0;
+    position: relative;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(180deg, var(--primary-black) 0%, var(--dark-green) 100%);
 }
 
 .navbar-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
 }
 
 .navbar-content {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 4rem;
+    min-height: 4rem;
+    width: 100%;
 }
 
 .mobile-menu-button {
-    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 0.5rem;
     color: var(--light-gray);
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 10;
 }
 
 .mobile-menu-button:hover {
@@ -37,7 +55,9 @@
 
 .mobile-menu {
     display: none;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+    background: var(--dark-green);
+    width: 100%;
 }
 
 .mobile-menu.open {
@@ -47,9 +67,10 @@
 .nav-item {
     color: var(--light-gray);
     text-decoration: none;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
     display: block;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .nav-item:hover {
@@ -64,10 +85,15 @@
 
     .desktop-menu {
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 2rem;
     }
 
     .nav-item {
         border-radius: 4px;
+        white-space: nowrap;
     }
 }
