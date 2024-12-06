@@ -1,10 +1,19 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import '../styles/navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === path;
+    }
+    return pathname.startsWith(path);
+  };
 
   return (
     <nav className="navbar">
@@ -25,19 +34,19 @@ const Navbar = () => {
           </button>
 
           <div className="desktop-menu">
-            <Link href="/" className="nav-item">Home</Link>
-            <Link href="/products" className="nav-item">Products</Link>
-            <Link href="/services" className="nav-item">Services</Link>
-            <Link href="/contact" className="nav-item">Contact</Link>
+          <Link href="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>Home</Link>
+            <Link href="/products" className={`nav-item ${isActive('/products') ? 'active' : ''}`}>Products</Link>
+            <Link href="/services" className={`nav-item ${isActive('/services') ? 'active' : ''}`}>Services</Link>
+            <Link href="/contact" className={`nav-item ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
           </div>
         </div>
 
         {isOpen && (
           <div className="mobile-menu">
-            <Link href="/" className="nav-item">Home</Link>
-            <Link href="/products" className="nav-item">Products</Link>
-            <Link href="/services" className="nav-item">Services</Link>
-            <Link href="/contact" className="nav-item">Contact</Link>
+            <Link href="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>Home</Link>
+            <Link href="/products" className={`nav-item ${isActive('/products') ? 'active' : ''}`}>Products</Link>
+            <Link href="/services" className={`nav-item ${isActive('/services') ? 'active' : ''}`}>Services</Link>
+            <Link href="/contact" className={`nav-item ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
           </div>
         )}
       </div>

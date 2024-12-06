@@ -1,6 +1,7 @@
 'use client';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
@@ -43,6 +44,11 @@ export default function CategoryPage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="back-button-container">
+            <Link href="/products" className="back-button">
+              <span>←</span> Back to Products
+            </Link>
           </div>
         </div>
       </div>

@@ -71,11 +71,30 @@
     display: block;
     transition: all 0.3s ease;
     text-align: center;
+    position: relative;
 }
 
 .nav-item:hover {
     background-color: var(--lime-green);
     color: var(--primary-black);
+}
+
+.nav-item.active {
+    background-color: var(--lime-green);
+    color: white;
+    font-weight: 500;
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
 }
 
 @media (min-width: 768px) {
